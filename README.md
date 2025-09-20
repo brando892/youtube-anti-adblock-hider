@@ -11,14 +11,14 @@ This filter is surgical and focused — it only removes YouTube’s anti-adblock
 **AdGuard Extension**  
 1. Open AdGuard Extension → Settings → Filters → Custom Filters → Add URL  
 2. Paste the raw URL of this filter:  
-https://raw.githubusercontent.com/brando892/youtube-anti-adblock-hider/main/youtube-anti-adblock.txt  
+[https://raw.githubusercontent.com/brando892/youtube-anti-adblock-hider/main/youtube-anti-adblock.txt](https://raw.githubusercontent.com/brando892/youtube-anti-adblock-hider/main/youtube-anti-adblock.txt)  
 3. Click Apply / Save  
 4. Reload YouTube — overlay warnings are hidden.
 
 **uBlock Origin / Lite**  
 1. Open uBlock Origin → Dashboard → My Filters → Import / Paste  
 2. Paste the contents of youtube-anti-adblock.txt or use the raw URL:  
-https://raw.githubusercontent.com/brando892/youtube-anti-adblock-hider/main/youtube-anti-adblock.txt  
+h[ttps://raw.githubusercontent.com/brando892/youtube-anti-adblock-hider/main/youtube-anti-adblock.txt](https://raw.githubusercontent.com/brando892/youtube-anti-adblock-hider/main/youtube-anti-adblock.txt)  
 3. Click Apply Changes  
 4. Reload YouTube — overlay warnings are hidden.
 
