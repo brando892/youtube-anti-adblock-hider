@@ -28,4 +28,4 @@ Found a YouTube overlay not covered? Submit a pull request or open an issue. Sug
 
 Released under the MIT License — free to use, modify, and share with attribution to the original author.
 
-**Tagline for GitHub repo page:** “Surgically hides YouTube anti-adblock overlay popups — precise, minimal, and safe.”
+
