@@ -1,0 +1,7 @@
+! YouTube video player overlay remover – fully optimized, MV3-compliant
+! 1) Current overlay class
+! 2) Minor alternative overlay
+! 3) Safe fallback for future overlay class changes
+youtube.com##.html5-video-player [class*="ytp-ad-player-overlay"], 
+youtube.com##.html5-video-player [class*="ad-overlay"], 
+youtube.com##.html5-video-player [class*="overlay"]
