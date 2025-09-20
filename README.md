@@ -2,7 +2,7 @@
 
 **A small, precise filter that hides YouTube’s anti-adblock overlay popups, letting you watch videos without interruptions.**
 
-This filter is surgical and focused — it only removes YouTube’s anti-adblock overlay/warning popups. It is minimal and precise — affects only the overlay; all other ad-blocking should be handled by your main blocker. Fully MV3-compliant and widely compatible — works in modern desktop browser extensions like AdGuard, uBlock Origin (including Lite/Legacy), AdBlock Plus, and Nano Adblocker. Safe — playback, controls, and video content remain completely unaffected.
+This filter is surgical and focused — it only removes YouTube’s anti-adblock overlay/warning popups. It is minimal and precise — affects only the overlay; all other ad-blocking should be handled by your main blocker. Fully MV3-compliant and designed for AdGuard desktop browser extensions. Safe — playback, controls, and video content remain completely unaffected.
 
 ⚠️ Note: This filter does not block video ads — it only removes the overlay warnings about ad blockers.
 
@@ -15,12 +15,6 @@ This filter is surgical and focused — it only removes YouTube’s anti-adblock
 3. Click Apply / Save  
 4. Reload YouTube — overlay warnings are hidden.
 
-**uBlock Origin / Lite**  
-1. Open uBlock Origin → Dashboard → My Filters → Import / Paste  
-2. Paste the contents of youtube-anti-adblock.txt or use the raw URL:  
-https://raw.githubusercontent.com/brando892/youtube-anti-adblock-hider/main/youtube-anti-adblock.txt](https://raw.githubusercontent.com/brando892/youtube-anti-adblock-hider/main/youtube-anti-adblock.txt)  
-3. Click Apply Changes  
-4. Reload YouTube — overlay warnings are hidden.
 
 ## Usage
 
