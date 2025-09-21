@@ -1,31 +1,43 @@
 ! =====================================================
-! YouTube Anti-Adblock Overlay Remover
+! YT Adblock Warning Hider
 ! =====================================================
 !
-! Purpose:
-! Removes the popup overlays YouTube shows when it detects
-! you are using an ad blocker. These overlays block the
-! video until dismissed. This rule hides them completely.
+! What this does:
+! YouTube sometimes shows a big popup warning if it detects
+! you are using an ad blocker. This popup covers the video
+! until you close it. These rules hide that popup completely.
 !
-! Notes:
-! - Only hides the overlay — does not block video ads.
-! - Fully MV3-compliant, works in AdGuard extension.
-! - Minimal and safe: affects ONLY the overlay elements.
+! What this does NOT do:
+! - It does NOT block video ads (AdGuard already handles that).
+! - It only removes the annoying anti-adblock popup overlay.
 !
-! How to install in AdGuard:
-! 1) Open AdGuard → Settings → Filters → Custom Rules
-! 2) Copy/paste the filter rules below
-! 3) Save and reload YouTube
+! Why this works:
+! - Targets ONLY the popup overlay classes used by YouTube.
+! - Includes a safe fallback in case YouTube renames things.
+! - Fully MV3-compliant → safe for AdGuard and modern blockers.
+!
+! How to install in AdGuard (recommended method):
+! 1) Open AdGuard → Settings → Filters → Custom Filters → Add URL
+! 2) Paste this raw URL:
+!    https://raw.githubusercontent.com/brando892/youtube-anti-adblock-hider/main/youtube-anti-adblock.txt
+! 3) Click Apply / Save
+! 4) Reload YouTube — anti-adblock overlay popups will be hidden
+!
+! Optional manual installation (no auto-updates):
+! 1) Open AdGuard → Settings → User Rules → Add Rule
+! 2) Copy/paste the rules below
+! 3) Click Apply / Save
+! 4) Reload YouTube
 !
 ! =====================================================
 ! Filter Rules
 ! =====================================================
 
-! (1) Current YouTube overlay element
+! (1) Main popup overlay YouTube shows for adblock detection
 youtube.com##.html5-video-player [class*="ytp-ad-player-overlay"]
 
-! (2) Alternative overlay class sometimes used
+! (2) Backup: another overlay class YouTube sometimes uses
 youtube.com##.html5-video-player [class*="ad-overlay"]
 
-! (3) Safe generic fallback in case YouTube renames classes
+! (3) Safety net: generic overlay rule in case of future changes
 youtube.com##.html5-video-player [class*="overlay"]
