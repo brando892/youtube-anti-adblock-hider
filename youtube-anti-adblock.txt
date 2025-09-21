@@ -20,7 +20,7 @@
 ! =====================================================
 ! 1) Open AdGuard → Settings → Filters → Custom Filters → Add URL
 ! 2) Paste this raw URL:
-!    https://raw.githubusercontent.com/brando892/youtube-anti-adblock-hider/main/youtube-anti-adblock.txt
+! https://raw.githubusercontent.com/brando892/youtube-anti-adblock-hider/main/youtube-anti-adblock.txt
 ! 3) Click Apply / Save
 ! 4) Reload YouTube — overlay warnings should be hidden
 
