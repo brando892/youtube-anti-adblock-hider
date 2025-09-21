@@ -1,7 +1,31 @@
-! YouTube video player overlay remover – fully optimized, MV3-compliant
-! 1) Current overlay class
-! 2) Minor alternative overlay
-! 3) Safe fallback for future overlay class changes
-youtube.com##.html5-video-player [class*="ytp-ad-player-overlay"], 
-youtube.com##.html5-video-player [class*="ad-overlay"], 
+! =====================================================
+! YouTube Anti-Adblock Overlay Remover
+! =====================================================
+!
+! Purpose:
+! Removes the popup overlays YouTube shows when it detects
+! you are using an ad blocker. These overlays block the
+! video until dismissed. This rule hides them completely.
+!
+! Notes:
+! - Only hides the overlay — does not block video ads.
+! - Fully MV3-compliant, works in AdGuard extension.
+! - Minimal and safe: affects ONLY the overlay elements.
+!
+! How to install in AdGuard:
+! 1) Open AdGuard → Settings → Filters → Custom Rules
+! 2) Copy/paste the filter rules below
+! 3) Save and reload YouTube
+!
+! =====================================================
+! Filter Rules
+! =====================================================
+
+! (1) Current YouTube overlay element
+youtube.com##.html5-video-player [class*="ytp-ad-player-overlay"]
+
+! (2) Alternative overlay class sometimes used
+youtube.com##.html5-video-player [class*="ad-overlay"]
+
+! (3) Safe generic fallback in case YouTube renames classes
 youtube.com##.html5-video-player [class*="overlay"]
