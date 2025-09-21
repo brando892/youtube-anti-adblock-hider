@@ -6,6 +6,11 @@ This filter is surgical and focused — it only removes YouTube’s anti-adblock
 
 ⚠️ Note: This filter does not block video ads — it only removes the overlay warnings about ad blockers.
 
+### Why This Filter Works
+
+Unlike other solutions that overcomplicate or rely on scripts, this filter takes a **surgical approach**: it hides only the annoying YouTube anti-adblock overlay without affecting video playback, controls, captions, or other UI elements. Lightweight, future-proof, and fully MV3-compliant, it works where default adblockers can’t, giving power users a simple, reliable way to enjoy YouTube without interruptions. Simple but effective — that’s the innovation.
+
+
 ## Installation
 
 **AdGuard Extension**  
