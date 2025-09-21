@@ -1,8 +1,8 @@
 ! =====================================================
-! YT Adblock Warning Hider
+! YT Adblock Warning Hider 
 ! =====================================================
 !
-! Hides YouTube anti-adblock overlays only inside the video player.
+! Hides ONLY the YouTube anti-adblock overlay popup.
 ! Fully MV3-compliant, safe, and minimal.
 
 ! =====================================================
@@ -10,18 +10,17 @@
 ! =====================================================
 
 ! (1) Main anti-adblock overlay
-youtube.com##.html5-video-player > [class*="ytp-ad-player-overlay"]
+youtube.com##.html5-video-player [class*="ytp-ad-player-overlay"]
 
 ! (2) Backup overlay class
-youtube.com##.html5-video-player > [class*="ad-overlay"]
+youtube.com##.html5-video-player [class*="ad-overlay"]
 
-! (3) Generic fallback in case of future changes
-youtube.com##.html5-video-player > [class*="overlay"]
+! (3) Generic fallback for future class renames
+youtube.com##.html5-video-player [class*="overlay"]
 
+! (4) Domain fallbacks (YouTube Music & NoCookie)
+music.youtube.com##.html5-video-player [class*="ytp-ad-player-overlay"]
+youtube-nocookie.com##.html5-video-player [class*="ytp-ad-player-overlay"]
 
-! (4) Extra polish — remove leftover space
-youtube.com##.html5-video-player > [class*="ytp-ad-player-overlay"]:style(display: none !important; height: 0 !important;)
-
-! (5) Future-proof: hide any element inside video player with "ad" or "overlay" in class
-youtube.com##.html5-video-player > [class*="ad"]:style(display: none !important; height: 0 !important;)
-youtube.com##.html5-video-player > [class*="overlay"]:style(display: none !important; height: 0 !important;)
+! (5) Extra polish — remove leftover space
+youtube.com##.html5-video-player [class*="ytp-ad-player-overlay"]:style(display: none !important; height: 0 !important;)
